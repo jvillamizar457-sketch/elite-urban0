@@ -1,0 +1,26 @@
+ELITE URBAN | Paquete para hosting
+
+CONTENIDO
+- index.html: landing page y tienda en un solo archivo. Las fotografías incluidas en el HTML están embebidas.
+
+PUBLICACIÓN
+1. Descomprime este ZIP.
+2. Sube index.html a la carpeta raíz pública de tu hosting (normalmente public_html, www o htdocs).
+3. Abre tu dominio y verifica la página en computador y celular.
+
+CONFIGURACIÓN OBLIGATORIA ANTES DE RECIBIR PEDIDOS
+Abre index.html y busca el objeto CFG al comienzo del JavaScript. Actualiza:
+- WA: número de WhatsApp en formato internacional, solo dígitos. Ejemplo Colombia: 57 seguido del número.
+- IG: usuario de Instagram sin @.
+- PIN: clave del panel de administración. La clave actual del archivo es de demostración y debe cambiarse.
+- WOMPI: clave pública de Wompi, cuando tengas la cuenta y la integración configuradas.
+- NEQUI y DAVI: números reales donde recibirías esos pagos.
+
+PAGOS Y SEGURIDAD
+Esta entrega es una tienda estática (HTML/CSS/JavaScript). El carrito y el registro local de pedidos funcionan en el navegador. Para cobrar de verdad con tarjeta/PSE debes configurar una pasarela y completar su integración de producción. No publiques claves privadas en el HTML.
+La clave del panel de administración está en el código del navegador, por lo que no es una protección segura para administrar inventario o pedidos públicamente. Para una tienda en producción se recomienda conectar un backend con autenticación y base de datos.
+Los pedidos guardados en modo local quedan en el navegador del comprador, no en una base de datos central. La sincronización con el entorno Claude del archivo original es opcional y no equivale a un backend estándar de hosting.
+
+DATOS A VERIFICAR
+El archivo original ya contiene un número de WhatsApp y números de pago de ejemplo. Confírmalos y reemplázalos por los datos reales antes de publicar.
+El pie de página incluye “Propietario: Diego Misas”.
